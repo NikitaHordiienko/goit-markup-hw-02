@@ -10,70 +10,100 @@
     --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
-
-/* основной цвет текста #212121; */
-/* вторичній цвет текста #757575;*/
-/* акцент #2196F3; */
-/* белый #FFFFFF; */
-/* цвет контактов в футер rgba(255, 255, 255, 0.6); */
-/* второй цвет фона #2F303A; */
-/* третий цвет фона #F5F4FA; */
-
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
-ul {
+
+.list {
     list-style: none;
-}
-a {
-    text-decoration: none;
 }
 
 /* Логотип */
+
 .logo {
     color: var(--logo-text-color);
+    font-family: 'Raleway', cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
+
 .logo .logo-part {
     color: var(--accent-text-color);
 }
+
 /* Навигация сайта */
+
 .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
+
 .site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--accent-text-color);
-}
+.site-nav .link:focus,
 .site-nav .link.current {
     color: var(--accent-text-color);
 }
+
 .auth-nav .link {
     color: var(--primary-text-color);
-    }
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-text-color);
 }   
 
 /* Hero */
+
 .hero {
     background-color: var(--additional-background-color);
 }
+
 .hero .hero-title {
     color: var(--hero-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* Button */
 
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+}
+
 .btn.btn-primary {
     color: var(--hero-text-color) ;
     background-color: var(--accent-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
 }
 
 /* Features */
-.feature-list .visually-hidden,
-.section .visually-hidden {
+
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -85,17 +115,26 @@ a {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .feature-list .title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
 }
 
 /* Our activities */
 
 .section .section-title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
 }
 
 /* Our team */
+
 .team {
     background-color: var(--extra-backround-color);
 }
@@ -104,9 +143,18 @@ a {
     background-color: var(--primary-background-color);
 }
 
-.worker-info .title,
-.project-info .title {
+.worker-info .title {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;    
+}
+
+.worker-info .post {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
 /* footer */
@@ -119,16 +167,30 @@ a {
     color: var(--hero-text-color);
 }
 
+.address {
+    font-style: normal;
+}
+
+.address .address-list {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 .address-list .street {
     color: var(--hero-text-color);
+    text-decoration: none;
 }
+
 .address-list .street:hover,
 .address-list .street:focus {
     color: var(--accent-text-color);
 }
+
 .address-list .link {
     color: var(--footer-contacts-color);
+    text-decoration: none;
 }
+
 .address-list .link:hover,
 .address-list .link:focus {
     color: var(--accent-text-color);
@@ -140,12 +202,33 @@ a {
 .btn.btn-secondary {
     color: var(--title-text-color);
     background-color: var(--extra-backround-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
 }
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
 .btn.btn-secondary:hover,
 .btn.btn-secondary:focus {
     color: var(--hero-text-color);
     background-color: var(--accent-text-color);
 }
-.project-list p {
+
+.project-info .link {
+    text-decoration: none;
+}
+
+.project-info .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-list .type {
     color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
 }
