@@ -14,7 +14,6 @@ body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -125,7 +124,7 @@ body {
 
 /* Our activities */
 
-.section .section-title {
+.section-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -181,11 +180,6 @@ body {
     text-decoration: none;
 }
 
-.address-list .street:hover,
-.address-list .street:focus {
-    color: var(--accent-text-color);
-}
-
 .address-list .link {
     color: var(--footer-contacts-color);
     text-decoration: none;
@@ -198,6 +192,11 @@ body {
 
 
 /* Portfolio */
+
+.btn.btn-secondary.btn-page {
+    color: var(--hero-text-color);
+    background-color: var(--accent-text-color);
+}
  
 .btn.btn-secondary {
     color: var(--title-text-color);
